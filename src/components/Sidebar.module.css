@@ -1,0 +1,48 @@
+.sidebar {
+    width: 20rem;
+    padding: .5rem 0 .5rem .5rem;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar nav h1 {
+    margin-bottom: 3rem;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: .3rem;
+}
+
+.sidebar nav h1 a {
+    font-size: 1.5rem;
+    
+
+}
+
+.sidebar nav ul{
+    margin-bottom: 3rem;
+}
+
+.sidebar nav ul li{
+    margin-bottom: .5rem;
+    max-width: 100% !important;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: .5rem;
+}
+
+.sidebar nav ul a:hover,
+.sidebar nav ul a:focus{
+    background: #fff;
+    color: #333;
+    width: 100%;
+    border-radius: 1rem 0 0 1rem;
+}

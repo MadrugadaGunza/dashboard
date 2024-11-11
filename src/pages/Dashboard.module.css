@@ -1,0 +1,6 @@
+.dashboard{
+    background: #348F6C;
+    min-height: 100vh;
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+}
