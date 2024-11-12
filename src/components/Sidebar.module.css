@@ -32,7 +32,8 @@
 }
 
 .sidebar nav a {
-    display: block;
+    display: flex;
+    align-items: center;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -40,9 +41,21 @@
 }
 
 .sidebar nav ul a:hover,
-.sidebar nav ul a:focus{
+.sidebar nav ul a:focus,
+.out:hover,
+.out:focus{
     background: #fff;
     color: #333;
     width: 100%;
     border-radius: 1rem 0 0 1rem;
+}
+
+.sidebar nav a > *{
+    fill: #fff;
+    margin-right: .5rem;
+}
+.sidebar nav a:hover > *,
+.sidebar nav a:focus > *{
+    fill: #333;
+    margin-right: .5rem;
 }
