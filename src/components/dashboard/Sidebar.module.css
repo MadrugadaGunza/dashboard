@@ -1,0 +1,100 @@
+.sidebar {
+    width: 20rem;
+    padding: .5rem 0 .5rem .5rem;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar nav h1 {
+    margin-bottom: 3rem;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: .3rem;
+}
+
+.displayLogo {
+    opacity: 0;
+}
+
+.sidebar nav h1 a {
+    font-size: 1.5rem;
+}
+
+.sidebar nav ul {
+    margin-bottom: 3rem;
+}
+
+.sidebar nav ul li {
+    margin-bottom: .5rem;
+    max-width: 100% !important;
+}
+
+.aside nav a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: .5rem;
+}
+
+.aside nav ul a:hover,
+.aside nav ul a:focus,
+.aside .out:hover,
+.aside .out:focus {
+    background: #fff;
+    color: #333;
+    width: 100%;
+    border-radius: 5rem 0 0 5rem;
+}
+
+.aside nav a>* {
+    fill: #fff;
+    margin-right: .5rem;
+}
+
+.aside nav a:hover>*,
+.aside nav a:focus>* {
+    fill: #333;
+    margin-right: .5rem;
+}
+
+.aside nav ul a:global(.active) {
+    background: #fff;
+    color: #333;
+    width: 100%;
+    border-radius: 5rem 0 0 5rem;
+}
+
+.aside nav a:global(.active)>* {
+    fill: #333;
+    margin-right: .5rem;
+}
+
+
+/* close */
+
+.sidebarClose nav h1 {
+    font-weight: bold;
+}
+
+.sidebarClose nav ul {
+    margin: 3rem 0 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarClose nav ul li {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.sidebarClose .out {
+    margin: 3rem 0 0 .5rem;
+}

@@ -1,0 +1,29 @@
+.card {
+    background: #eee;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 1px 2px 4px #ccc;
+}
+
+.card h5 {
+    color: #999;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.card h1 {
+    font-size: 28px;
+    margin-bottom: .5rem;
+}
+
+.positivo {
+    color: #348F6C;
+}
+
+.negativo {
+    color: #f03;
+}
+
+.equilibrio {
+    color: #fb0;
+}

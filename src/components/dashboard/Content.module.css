@@ -1,0 +1,44 @@
+.content {
+    background: #fff;
+    color: #333;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+/* section */
+.content section,
+.sectionTwo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.sectionTwo {
+    margin-top: 1.5rem;
+}
+
+
+.sectionTwo article {
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.sectionTwo article h1 {
+    margin-bottom: 2rem;
+}
+
+.sectionTwo ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.sectionTwo ul li.active{
+    color: #fff;
+    background: #348F6C;
+}
