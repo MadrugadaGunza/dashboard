@@ -8,6 +8,7 @@ import { data } from '../../data/top-card';
 import Card from './Card';
 import { VictoryPie, VictoryBar } from "victory";
 import Header from './Header';
+import useMedia from './../../hooks/useMedia';
 
 const Content = () => {
     const dataChart = [
@@ -49,18 +50,21 @@ const Content = () => {
             function: 'Técnico de Máquinas e Motores',
             value: 800
         },
-    ]
+    ];
+
+    const mobileCard = useMedia('(max-width: 790px)');
+    const mobile = useMedia('(max-width: 937px)');
 
     return (
         <div className={styles.content}>
             <Header />
 
-            <section>
+            <section className={mobileCard ? styles.blockCardMobile : styles.blockCard}>
                 {data && data.map((item) => <Card key={item.id} data={item} />)}
             </section>
-            <section className={styles.sectionTwo}>
+            <section className={mobile ? styles.sectionTwoMobile : styles.sectionTwo}>
                 <article>
-                    <h1>Novembro</h1>
+                    {!mobileCard && <h2>Novembro</h2>}
                     <ul>
                         {dataUsers && dataUsers.map((item) => (
                             <li key={item.id} className={item.id === 0 && styles.active}>
@@ -74,10 +78,11 @@ const Content = () => {
                     </ul>
                 </article>
                 <article>
+                    {!mobileCard && <h2>Novembro</h2>}
                     <VictoryPie
                         data={dataChart}
                         innerRadius={50}
-                        padding={{ top: 80, right: 80, bottom: 80, left: 80 }}
+                        padding={{ top: 0, right: 80, bottom: 80, left: 80 }}
                         style={{
                             data: { stroke: '#fff', strokeWidth: 1.5 },
                             labels: { fontSize: 14, fill: '#333' }
@@ -86,13 +91,15 @@ const Content = () => {
                     />
                 </article>
                 <article>
+                    {!mobileCard && <h2>Novembro</h2>}
                     <VictoryBar
                         data={dataChart}
+                        padding={{ top: 0, right: 20, bottom: 0, left: 20 }}
                         style={{
                             data: {
                                 fill: ({ index }) => ['#1F5540', '#2B7659', '#348F6C', '#7FC3A9', '#A6D9C5',][index],
                                 stroke: '#fff',
-                                strokeWidth: 1,
+                                strokeWidth: 1.5,
                             }
                         }}
                     />

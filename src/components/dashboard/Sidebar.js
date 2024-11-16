@@ -16,15 +16,15 @@ const Sidebar = () => {
     return (
         <aside className={`${open ? styles.sidebar : styles.sidebarClose} ${styles.aside}`}>
             <nav>
-                <h1><Link>M2CG{open && ' - Tech'}</Link></h1>
+                <h1><Link to='/dashboard'>M2CG{open && ' - Tech'}</Link></h1>
 
                 <ul>
                     <li><NavLink to='/dashboard' end><Dash /> {open && 'Dashboard'}</NavLink></li>
-                    <li><NavLink to='/central'><UserSetting /> {open && 'Central de Usuário'}</NavLink></li>
-                    <li><NavLink to='/admin'><Admin /> {open && 'Administração'}</NavLink></li>
-                    <li><NavLink to='/shop'><UserSetting /> {open && 'Loja'}</NavLink></li>
+                    <li><NavLink to='/dashboard/central'><UserSetting /> {open && 'Central de Usuário'}</NavLink></li>
+                    <li><NavLink to='/dashboard/admin'><Admin /> {open && 'Administração'}</NavLink></li>
+                    <li><NavLink to='/dashboard/shop'><UserSetting /> {open && 'Loja'}</NavLink></li>
                     <li><NavLink to='/dashboard/setting'><Setting /> {open && 'Configurações'}</NavLink></li>
-                    <li><NavLink to='/suport'><Suporte /> {open && 'Suporte'}</NavLink></li>
+                    <li><NavLink to='/dashboard/suport'><Suporte /> {open && 'Suporte'}</NavLink></li>
                 </ul>
 
                 <Link className={styles.out}><Out /> {open && 'Saír'}</Link>
