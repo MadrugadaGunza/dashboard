@@ -5,10 +5,10 @@ export const RouteSelect = () => {
     return (
         <div className="space-y-1">
             <Route Icon={FiHome} selected={true} title="Dashboard" />
-            <Route Icon={FiUsers} selected={false} title="Team" />
-            <Route Icon={FiPaperclip} selected={false} title="Invoices" />
-            <Route Icon={FiLink} selected={false} title="Integrations" />
-            <Route Icon={FiDollarSign} selected={false} title="Finance" />
+            <Route Icon={FiUsers} selected={false} title="Equipa" />
+            <Route Icon={FiPaperclip} selected={false} title="Facturas" />
+            <Route Icon={FiLink} selected={false} title="Integrações" />
+            <Route Icon={FiDollarSign} selected={false} title="Finanças" />
         </div>
     )
 }
