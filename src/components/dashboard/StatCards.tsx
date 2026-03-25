@@ -5,25 +5,25 @@ export const StatCards = () => {
     return (
         <React.Fragment>
             <Card
-                title="Gross Revenue"
-                value="$120,054.24"
+                title="Receita bruta"
+                value="$120,054.24 KZ"
                 pillText="2.75%"
                 trend="up"
-                period="From Jan 1st - Jul 31st"
+                period="01 jan – 31 jul 2025"
             />
             <Card
-                title="Avg Order"
-                value="$27.94"
+                title="Pedido médio"
+                value="$27.94 KZ"
                 pillText="1.01%"
                 trend="down"
-                period="From Jan 1st - Jul 31st"
+                period="01 jan – 31 jul 2025"
             />
             <Card
-                title="Trailing Year"
-                value="$278,054.24"
+                title="Receita nos últimos 12 meses"
+                value="$278,054.24 KZ"
                 pillText="60.75%"
                 trend="up"
-                period="Previous 365 days"
+                period="Últimos 365 dias"
             />
         </React.Fragment>
     )
@@ -39,11 +39,11 @@ interface CardType {
 
 const Card = ({ title, value, pillText, trend, period }: CardType) => {
     return (
-        <div className="col-span-4 p-4 rounded border border-stone-300">
+        <div className="col-span-12 lg:col-span-4 p-4 rounded border border-stone-300">
             <div className="flex items-start mb-6 justify-between">
                 <div>
                     <h3 className="text-stone-500 mb-2 text-sm">{title}</h3>
-                    <p className="text-3xl font-semibold">{value}</p>
+                    <p className="text-2xl md:text-3xl font-semibold">{value}</p>
                 </div>
 
                 <span

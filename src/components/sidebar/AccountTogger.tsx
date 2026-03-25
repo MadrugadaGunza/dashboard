@@ -10,8 +10,8 @@ const AccountTogger = () => {
                     className='size-8 rounded shrink-0 bg-violet-500 shadow'
                 />
                 <div className="text-start">
-                    <span className="text-sm font-semibold block">Tom Is Loading</span>
-                    <span className="text-xs block text-stone-500">tom@hover.dev</span>
+                    <span className="text-sm font-semibold block">Madrugada</span>
+                    <span className="text-xs block text-stone-500">madrugada@gmail.com</span>
                 </div>
                 <FiChevronDown className='absolute right-2 top-1/2 translate-y-[calc(-50%+4px)] text-xs' />
                 <FiChevronUp className='absolute right-2 top-1/2 translate-y-[calc(-50%-4px)] text-xs' />

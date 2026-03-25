@@ -3,18 +3,23 @@
 import { FiUser } from "react-icons/fi"
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-const data = Array.from({ length: 7 }, (_, i) => ({
-    name: `Dia ${i + 1}`,
-    desktop: Math.floor(Math.random() * 2000) + 200,
-    mobile: Math.floor(Math.random() * 2000) + 150,
+const meses = [
+    'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
+    'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'
+];
+
+const data = meses.map((mes) => ({
+    name: mes,
+    computador: Math.floor(Math.random() * 100) + 500,
+    telefone: Math.floor(Math.random() * 100) + 400,
 }));
 
 const ActivityGraph = () => {
     return (
-        <div className="col-span-8 overflow-hidden rounded border border-stone-300">
+        <div className="col-span-12 lg:col-span-8 overflow-hidden rounded border border-stone-300">
             <div className="p-4">
                 <h3 className="flex items-center gap-1.5 font-medium">
-                    <FiUser /> Activity
+                    <FiUser /> Tráfego por dispositivo
                 </h3>
             </div>
 
@@ -36,8 +41,8 @@ const ActivityGraph = () => {
                         />
                         <Tooltip />
                         <Legend />
-                        <Line type="monotone" dataKey="mobile" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <Line type="monotone" dataKey="desktop" stroke="#82ca9d" />
+                        <Line type="monotone" dataKey="telefone" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        <Line type="monotone" dataKey="computador" stroke="#82ca9d" />
                     </LineChart>
                 </ResponsiveContainer>
             </div>

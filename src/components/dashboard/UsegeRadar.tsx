@@ -4,12 +4,12 @@ import { FiEye } from 'react-icons/fi';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 
 const features = [
-    'Visualizações',
+    'Views',
     'Cliques',
     'Uploads',
     'Downloads',
-    'Compartilhamentos',
-    'Comentários',
+    'Compart.',
+    'Coment.',
 ];
 
 const data = features.map((item) => ({
@@ -21,10 +21,10 @@ const data = features.map((item) => ({
 
 const UsegeRadar = () => {
     return (
-        <div className='col-span-4 overflow-hidden rounded border border-stone-300'>
+        <div className='col-span-12 lg:col-span-4 overflow-hidden rounded border border-stone-300'>
             <div className="p-4">
                 <h3 className="flex items-center gap-1.5 font-medium">
-                    <FiEye /> Usage
+                    <FiEye /> Resumo de engajamento
                 </h3>
             </div>
 
