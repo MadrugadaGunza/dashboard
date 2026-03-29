@@ -13,7 +13,7 @@ const Search = () => {
                 <FiSearch className='mr-2' />
                 <input
                     type="text"
-                    placeholder='Search'
+                    placeholder='Buscar'
                     className="w-full bg-transparent placeholder:text-stone-400 focus:outline-none"
                     onFocus={(e) => {
                         e.target.blur();
